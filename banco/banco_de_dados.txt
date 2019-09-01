@@ -1,0 +1,77 @@
+
+CREATE DATABASE banco_dados;
+
+USE banco_dados;
+
+CREATE TABLE pessoa_fisica(
+
+  id INT NOT NULL AUTO_INCREMENT,
+
+  cpf VARCHAR(15) NOT NULL,
+  
+  nome VARCHAR(100) NOT NULL,
+
+  rg VARCHAR(45) NOT NULL,
+
+  sexo VARCHAR(10) NOT NULL,
+
+  data_nasc DATE NOT NULL,
+
+  email VARCHAR(100) NOT NULL,
+
+  cep VARCHAR(10) NOT NULL,
+  
+  rua VARCHAR(100) NOT NULL,
+
+  numero VARCHAR(6) NOT NULL,
+
+  bairro VARCHAR(45) NOT NULL,
+
+  cidade VARCHAR(100) NOT NULL,
+
+  uf VARCHAR(2) NOT NULL,
+
+  telefone VARCHAR(15) NOT NULL,
+
+  celular VARCHAR(15) NOT NULL,
+
+  PRIMARY KEY (id)
+)
+;
+
+
+
+CREATE TABLE pessoa_juridica(
+
+  id INT NOT NULL AUTO_INCREMENT,
+
+  cnpj VARCHAR(20) NOT NULL,
+
+  razao_social VARCHAR(100) NOT NULL,
+
+  nome_fantasia VARCHAR(100) NOT NULL,
+
+  inscricao_estadual VARCHAR(15) NOT NULL,
+
+  data_fundacao DATE NOT NULL,
+
+  email VARCHAR(100) NOT NULL,
+
+  cep VARCHAR(12) NOT NULL,
+
+  rua VARCHAR(100) NOT NULL,
+
+  numero VARCHAR(6) NOT NULL,
+
+  bairro VARCHAR(45) NOT NULL,
+
+  cidade VARCHAR(100) NOT NULL,
+
+  uf VARCHAR(2) NOT NULL,
+
+  telefone VARCHAR(15) NOT NULL,
+
+  celular VARCHAR(15) NOT NULL,
+
+  PRIMARY KEY (id)
+);
